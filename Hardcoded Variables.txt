@@ -1,0 +1,14 @@
+vid_cap => it is the capture video storage memory variable
+success, image => These variables are used to store the extracted frames of the video. success is used as a flag that the frames are still left and the loop has to continue to extract the images(frames).
+shape_to_np function() => Since the dlib library provides us with a simple way to extract the facial landmarks, such as nose, lips, eyes, etc. but it gives us a simple array, for easy computation and for only extracting the lips features we use this function.
+the frontal face detector and other functionality can be easily used through the facial_landmarks.py and it is quite easy to get all the features in the array. Coming to the variables used in the facial_lanmarks.py
+FACIAL_LANDMARKS.PY =>
+detector => this is is used to store the object of the face detector.
+predictor => model is used to see for the faces and then predict the landmarks of the face.
+I have taken into consideration that there can be many faces in an image though I have only tested it to work for one face. This would help me to extend the code when to use for more than one face. The faces can be taken by "rects" variable.
+one_tuple => stores all the coordinates of the lips. (for one frame)
+ls_all => this variable stores the coordinates of the lip boundary for all the frames, each row is for each frame.
+
+-------------
+doPCA() => This is used for the Principal component analysis of the input data in the form of 36 dimensional vector. This fits the data and finds a correlation between the points and gives the 18 most important or those 18 points having the most information(through information Gain, which is the default).
+Other 4 functions are simply the algorithms to complete Task2.

@@ -1,0 +1,11 @@
+https://grail.cs.washington.edu/projects/AudioToObama/siggraph17_obama.pdf
+https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
+https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/
+http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+https://stackoverflow.com/questions/138497/iterate-all-files-in-a-directory-using-a-for-loop
+https://www.dezyre.com/data-science-in-python-tutorial/principal-component-analysis-tutorial
+https://docs.python.org/2/library/math.html
+https://stackoverflow.com/questions/17531796/find-the-dimensions-of-a-multidimensional-python-array
+https://stackoverflow.com/questions/2169605/use-numpy-to-mask-an-image-with-a-pattern
+Videos on PCA from YouTube by Udacity.
+Some other videos on facial recognition from YouTube.

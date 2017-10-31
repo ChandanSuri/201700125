@@ -40,7 +40,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # detect faces in the grayscale image
 rects = detector(gray, 1)
-
+ls_all = []
 # loop over the face detections
 for (i, rect) in enumerate(rects):
 	# determine the facial landmarks for the face region, then
@@ -48,11 +48,14 @@ for (i, rect) in enumerate(rects):
 	# array
 	shape = predictor(gray, rect)
 	shape = shape_to_np(shape)
-
+	one_tuple = []
 	# loop over the (x, y)-coordinates for the facial landmarks
 	# and draw them on the image
 	for (x, y) in shape:
+		one_tuple.append(x)
+		one_tuple.append(y)
 		cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
+	ls_all.append(one_tuple)
 
 # show the output image with the face detections + facial landmarks
 cv2.imshow("Output", image)
