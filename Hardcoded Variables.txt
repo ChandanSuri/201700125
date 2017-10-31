@@ -12,3 +12,11 @@ ls_all => this variable stores the coordinates of the lip boundary for all the f
 -------------
 doPCA() => This is used for the Principal component analysis of the input data in the form of 36 dimensional vector. This fits the data and finds a correlation between the points and gives the 18 most important or those 18 points having the most information(through information Gain, which is the default).
 Other 4 functions are simply the algorithms to complete Task2.
+Function weighted_median_for_average =>
+all_weights_ls holds all the weights which are needed for each of the image according to the mouth shape coordinates.
+images_arr holds the array of images
+im_res holds the results of the image as median, which is calculated for each pixel.
+sim_to_im holds the index of those images which were found the most similar to the target image inputted. Actually, it holds all the indexes computed. This could be used for seeing which of all the frames was most similar and thus, could be used further.
+then, for all the pixels, I call the function for calculating the weighted median for each pixel.
+Other functions used are => weighted_median_per_pixel and all-weights and weight. These are used for calculating different parts of the formulae.
+-------------
